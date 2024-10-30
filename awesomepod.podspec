@@ -8,13 +8,18 @@ Pod::Spec.new do |s|
                        DESC
  
   s.homepage         = 'https://github.com/nrlnishan/refactored-octo-eureka'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license = { :type => 'Copyright', :text => <<-LICENSE
+                   Copyright © 2021 Amity Corporation. 
+                   All rights reserved.
+                  LICENSE
+                }
   s.author           = { 'Nishan Niraula' => 'myemail@gmail.com' }
   s.source           = { :git => 'https://github.com/nrlnishan/refactored-octo-eureka.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   s.source_files = 'awesomepod/Sources/*'
-  s.swift_version = '5.5'
+  s.swift_version = '5'
+  s.platform = :ios
   s.dependency 'RealmSwift', '10.49.3'
  
 end
